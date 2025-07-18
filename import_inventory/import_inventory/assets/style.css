@@ -1,0 +1,144 @@
+/* style.css - versi disempurnakan dan diperbarui */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: #333;
+  min-height: 100vh;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #0083b0;
+  margin-bottom: 1rem;
+}
+
+.form-input,
+form input[type="file"],
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form button {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #00bbbb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #008b8b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #00bbbb;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.alert {
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin: 0.2rem;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.alert.danger {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.alert.warning {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.alert.success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Sidebar styling (optional, if you use one) */
+nav.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.2s;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+nav.main-menu:hover {
+  width: 220px;
+}
+
+nav.main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.main-menu li {
+  margin: 10px 0;
+}
+
+nav.main-menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+nav.main-menu li a:hover {
+  background-color: #00bbbb;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
